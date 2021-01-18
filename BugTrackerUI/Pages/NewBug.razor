@@ -3,9 +3,9 @@
 <h3>Add New Bug</h3>
 
 <EditForm Model="AddBug">
-    <InputText @bind-Value="AddBug.Title" placeHolder="Enter Title"></InputText>
-    <InputText @bind-Value="AddBug.Description" placeHolder="Enter Description"></InputText>
-    <InputNumber @bind-Value="AddBug.Priority" placeHolder="Enter Priority"></InputNumber>
+    <InputText @bind-Value="@AddBug.Title" placeHolder="Enter Title"></InputText>
+    <InputText @bind-Value="@AddBug.Description" placeHolder="Enter Description"></InputText>
+    <InputNumber @bind-Value="@AddBug.Priority" placeHolder="Enter Priority"></InputNumber>
 
     <button type="submit">Add Bug</button>
 </EditForm>
